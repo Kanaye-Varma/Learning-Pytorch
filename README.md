@@ -63,7 +63,7 @@ Evaluates the model created by `fashion.py` and outputs the results.
 `trying_lstm.py` trains a basic LSTM model on the text `alice.txt` and saves its parameters to `lstm_model.pth`. The model was the result of learning the basics of LSTM models. 
 
 The model continues the starting phrase by adding characters based on patterns it has learnt from Alice in Wonderland (`alice.txt`). It is very basic, but is still capable of outputting real words and phrases.
-## Frankenstein
+## 👑 Frankenstein
 ### `frankensteinmodeller.py`, `frankeval.py`
  <b> How to use it: </b>
 > ```python frankensteinmodeller.py```
