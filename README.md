@@ -38,7 +38,39 @@ Uses `nn.Linear`, `nn.Sequential` and `nn.ReLU` to create a model capable of cla
 The program lets the user see how varying the number of epochs and learning rate helps the model learn. This time, the user can also customise the number of classes that the data is split into. 
 
 ## CNN 
+### `fashion.py`
+ <b> How to use it: </b>
+> ```python fashion.py```
+
+<b> What it does: </b>
+Trains a convolutional neural network on the FashionMNIST dataset available through `torchvision.datasets`. 
+
+### `fashioneval.py`
+ <b> How to use it: </b>
+> ```python fashioneval.py```
+
+<b> What it does: </b>
+Evaluates the model created by `fashion.py` and outputs the results.
 
 ## LSTM 
+### `trying_lstm.py`, `lstm_eval.py`
+ <b> How to use it: </b>
+> ```python trying_lstm.py```
 
+> ```python lstm_eval.py [num_characters] [starting phrase]```
+
+<b> What it does: </b>
+`trying_lstm.py` trains a basic LSTM model on the text `alice.txt` and saves its parameters to `lstm_model.pth`. The model was the result of learning the basics of LSTM models. 
+
+The model continues the starting phrase by adding characters based on patterns it has learnt from Alice in Wonderland (`alice.txt`). It is very basic, but is still capable of outputting real words and phrases.
 ## Frankenstein
+### `frankensteinmodeller.py`, `frankeval.py`
+ <b> How to use it: </b>
+> ```python frankensteinmodeller.py```
+
+> ```python frankeval.py [number of words] [randomness index] [starting phrase]```
+
+<b> What it does: </b>
+The proudest achievement of my endeavour, `frankensteinmodeller.py` trains a more complex LSTM model on the text `frankenstein.txt` and saves its parameters to `franken_model.pth`. The model takes in a starting phrase, number of words and randomness index. It then creates a poetic output of the desired number of words using the starting phrase. 
+
+Experimentally, randomness index values of 6-7 give the best results. Too low, and the output might become repetitive. Too high, and the output stops making sense. Changing the randomness value might give better output depending on the starting phrase and output length. 
