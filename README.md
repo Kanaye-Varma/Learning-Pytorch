@@ -71,6 +71,7 @@ The model continues the starting phrase by adding characters based on patterns i
 > ```python frankeval.py [number of words] [randomness index] [starting phrase]```
 
 <b> What it does: </b>
+
 The proudest achievement of my endeavour, `frankensteinmodeller.py` trains a more complex LSTM model on the text `frankenstein.txt` and saves its parameters to `franken_model.pth`. The model takes in a starting phrase, number of words and randomness index. It then creates a poetic output of the desired number of words using the starting phrase. 
 
 Experimentally, randomness index values of 6-7 give the best results. Too low, and the output might become repetitive. Too high, and the output stops making sense. Changing the randomness value might give better output depending on the starting phrase and output length. 
